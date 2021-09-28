@@ -965,7 +965,7 @@
 		<div class="main_maps text-center fix">
 			<div class="overlay"></div>
 			<div class="maps_text">
-				<h3 class="text-white" onclick="showmap()">FIND US ON THE MAP <i class="fa fa-angle-down"></i></h3>
+				<h3 class="text-white" onclick="showmap()">찾아오시는 길 <i class="fa fa-angle-down"></i></h3>
 				<div id="map_canvas" class="mapheight"></div>
 			</div>
 		</div>
@@ -1082,9 +1082,9 @@
 	<script>
 		function showmap() {
 			var mapOptions = {
-				zoom: 8,
-				scrollwheel: false,
-				center: new google.maps.LatLng(-34.397, 150.644),
+				zoom: 15,
+				scrollwheel: true,
+				center: new google.maps.LatLng(35.876,128.625),
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
